@@ -1,6 +1,17 @@
 # Приложение "Напоминания" (Recurring Reminders)
 
+[![Build APK](https://github.com/yonishepelev/anroid-reminder-app/actions/workflows/build-apk.yml/badge.svg)](https://github.com/yonishepelev/anroid-reminder-app/actions/workflows/build-apk.yml)
+
 Android приложение для создания повторяющихся напоминаний.
+
+## 📥 Скачать APK
+
+APK файл собирается автоматически через GitHub Actions:
+
+1. Перейдите в [Actions](https://github.com/yonishepelev/anroid-reminder-app/actions)
+2. Выберите последний успешный build
+3. Скачайте **app-debug** из секции Artifacts
+4. Установите на телефон
 
 ## Возможности
 
@@ -62,15 +73,18 @@ app/
 
 ## Сборка проекта
 
+### Автоматическая сборка (GitHub Actions)
+APK собирается автоматически при каждом push. Скачать можно из Artifacts в секции Actions.
+
+### Локальная сборка
+
 ```bash
-./gradlew build
+./gradlew assembleDebug
 ```
 
-## Установка на устройство
+APK будет в `app/build/outputs/apk/debug/app-debug.apk`
 
-```bash
-./gradlew installDebug
-```
+Подробные инструкции: [BUILD_INSTRUCTIONS.md](BUILD_INSTRUCTIONS.md)
 
 ## Разрешения
 
